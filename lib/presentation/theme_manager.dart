@@ -26,5 +26,37 @@ ThemeData getApplicationTheme() {
         fontSize: FontSize.s16,
       ),
     ),
+    buttonTheme: ButtonThemeData(
+      shape: const StadiumBorder(),
+      disabledColor: ColorManager.grey1,
+      buttonColor: ColorManager.primary,
+      splashColor: ColorManager.primary.withOpacity(0.7),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        textStyle: getRegularStyle(
+          color: ColorManager.white,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppSize.s12),
+        ),
+      ),
+    ),
+    textTheme: TextTheme(
+      headlineLarge: getSemiBoldStyle(
+        color: ColorManager.darkGrey,
+        fontSize: FontSize.s16,
+      ),
+      headlineMedium: getMediumStyle(
+        color: ColorManager.lightGrey,
+        fontSize: FontSize.s14,
+      ),
+      headlineSmall: getRegularStyle(
+        color: ColorManager.grey1,
+      ),
+      bodyMedium: getRegularStyle(
+        color: ColorManager.grey1,
+      ),
+    ),
   );
 }
